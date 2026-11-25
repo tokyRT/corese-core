@@ -15,4 +15,4 @@ jobs:
       - uses: moosetechnology/setup-MooseCI@v2.1.0
         with:
           project-path: ./src/main/java/fr/inria/corese/core/next
-          project-language: java
+          project-language: corese
