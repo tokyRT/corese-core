@@ -1,0 +1,32 @@
+MooseCIConfig {
+	#projectLanguage : #java,
+	#metrics : [
+		#packages,
+		#classes
+	],
+	#rules : [
+		#too_many_parameters : {
+			#parameters : 10
+		},
+		#large_class : {
+			#attributes : 15,
+			#methods : 20
+		},
+		#corese_unused_local_variable,
+		#unused_parameter
+	],
+	#outputFormats : [
+		#json, #html
+	],
+	#outputPath : '.moose-ci/report',
+	#visualizations : [
+        { #view : #dsm, #of : #packages },
+        {
+            #view : #architecturalMap,
+            #of : #packages,
+            #in : 'next\\..+',
+            #settings : { #layout : #tree }
+        }
+	],
+	#isRemote : false
+}
