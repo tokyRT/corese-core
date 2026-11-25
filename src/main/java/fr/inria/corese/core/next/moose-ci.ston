@@ -20,13 +20,7 @@ MooseCIConfig {
 	],
 	#outputPath : '.moose-ci/report',
 	#visualizations : [
-        { #view : #dsm, #of : #packages },
-        {
-            #view : #architecturalMap,
-            #of : #packages,
-            #in : 'next\\..+',
-            #settings : { #layout : #tree }
-        }
+        { #view : #dsm, #of : #packages }
 	],
 	#isRemote : false
 }
